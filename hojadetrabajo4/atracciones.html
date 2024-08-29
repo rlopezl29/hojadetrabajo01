@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atracciones - Semuc Champey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            color: #004d40;
+            margin-top: 20px;
+        }
+
+        .list-group-item {
+            background-color: #B7FDF1;
+            border-color: #00796b;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .list-group-item img {
+            max-width: 150px;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+  
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+
+            .list-group-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .list-group-item img {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .carousel-item img {
+                height: 200px;
+            }
+
+            .list-group-item {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Semuc Champey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="atracciones.html">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="aguaturquesa.jpg" class="d-block w-100" alt="Pozas de Agua Turquesa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pozas de Agua Turquesa</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" class="d-block w-100" alt="Puente de Piedra Caliza">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Puente de Piedra Caliza</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Mirador.jpg" class="d-block w-100" alt="Senderismo y Mirador">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Senderismo y Mirador</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container mt-5">
+        <h1 class="text-center">Atracciones en Semuc Champey</h1>
+        <p>Explora las maravillas que Semuc Champey tiene para ofrecer:</p>
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <img src="aguaturquesa.jpg" alt="Pozas de Agua Turquesa" class="img-fluid rounded-start me-3">
+                Pozas de Agua Turquesa
+            </li>
+            <li class="list-group-item">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Puente de Piedra Caliza" class="img-fluid rounded-start me-3">
+                Puente de Piedra Caliza
+            </li>
+            <li class="list-group-item">
+                <img src="Mirador.jpg" alt="Senderismo y Mirador" class="img-fluid rounded-start me-3">
+                Senderismo y Mirador
+            </li>
+            <li class="list-group-item">
+                <img src="lanquin.jpg" alt="Cueva de Lanquín" class="img-fluid rounded-start me-3">
+                Cueva de Lanquín
+            </li>
+            <li class="list-group-item">
+                <img src="tubin.gif" alt="Tubing y Rafting" class="img-fluid rounded-start me-3">
+                Tubing y Rafting
+            </li>
+        </ul>
+    </div>
+
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Turismo Semuc Champey. Todos los derechos reservados.</p>
+        <p>Rudy Orlando López López</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
