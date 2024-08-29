@@ -2,4 +2,4 @@
 
 El proyecto trata de un lugar turistico de guatemala en una pagina web
 
-https://main--hoja1.netlify.app/
+https://hoja4-javascript.netlify.app
